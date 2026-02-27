@@ -1,17 +1,24 @@
-class Person {
-    // TODO: Create a constructor Person()
-    // Print "Person class"
+class Person 
+{
+    public Person() 
+    {
+        System.out.println("Person class");
+    }
 }
 
-class Student extends Person {
-    // TODO: Create a constructor Student()
-    // Call super() first (this is implicit, but explicit is good practice)
-    // Print "Student class"
+class Student extends Person 
+{   
+    public Student() 
+    {
+        super();
+        System.out.println("Student class");
+    }
 }
 
-public class SuperConstructorDemo {
-    public static void main(String[] args) {
-        // TODO: Create an object of Student class
-        // Creating the object will automatically invoke constructors
+public class SuperConstructorDemo 
+{
+    public static void main(String[] args) 
+    {
+        Student obj = new Student();
     }
 }
